@@ -51,3 +51,6 @@ print(f"total Marks:{total}")
 print(f"percentage : {percentage:.2f}%")
 print(f"grade:{grade}")
 print("======================")
+
+<img width="723" height="345" alt="image" src="https://github.com/user-attachments/assets/45d74628-39dd-49b4-86a6-ada0aa1d1b08" />
+
