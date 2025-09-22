@@ -1,0 +1,50 @@
+## datatypes used : int, float, dict
+## functiones - sum(), len()
+## conditions - if-elif-else
+## take marks subjects - calculate total, percentage and grade using datatypes
+ 
+## subjects marks stored in the dictionery - use {}
+
+
+##step 1: Ask user to enter subjects
+num_subjects=int(input("Enter Number of Subjects :"))
+
+## step 2 : create empty dict to enter marks
+
+Marks= {}
+
+## step 3 : Take input from user for each subjects
+
+for i in range(num_subjects):
+    subject=input(f"Enter subject {i+1} name: ")
+    score=float(input(f"Enter marks for {subject}:"))
+    Marks[subject]=score   ## store subject :marks pair
+
+
+## Step 4 : calculate total and percentage
+
+total = sum(Marks.values())
+percentage = total / num_subjects
+
+# Decide grades 
+
+if percentage>=60:
+    grade = "First division"
+elif percentage>=35:
+    grade ="Pass"
+else:
+    grade = "Fail"
+
+    ## step 5 : print results 
+
+print("\n Student report card")
+print("-------------------")
+
+for subject, score in Marks.items():
+ print(f"{subject}:{score}")
+
+
+print(f"total Marks:{total}")
+print(f"percentage : {percentage:.2f}%")
+print(f"grade:{grade}")
+print("======================")
